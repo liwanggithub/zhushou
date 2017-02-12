@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="185" id="KGk-i7-Jjw" customClass="ZhuTiTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="462" height="185"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="462" height="184"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ek6-jm-KNj">
+                        <rect key="frame" x="0.0" y="0.0" width="462" height="185"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="CNH-FC-GEP">
+                                <rect key="frame" x="5" y="5" width="452" height="123"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVi-P6-C3R">
+                                <rect key="frame" x="5" y="159" width="452" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="characterWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tzr-1l-dtP">
+                                <rect key="frame" x="5" y="133" width="452" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tzr-1l-dtP" firstAttribute="leading" secondItem="Ek6-jm-KNj" secondAttribute="leading" constant="5" id="5as-ed-wOs"/>
+                            <constraint firstItem="CNH-FC-GEP" firstAttribute="top" secondItem="Ek6-jm-KNj" secondAttribute="top" constant="5" id="79G-nL-Xzw"/>
+                            <constraint firstItem="tzr-1l-dtP" firstAttribute="top" secondItem="CNH-FC-GEP" secondAttribute="bottom" constant="5" id="RxO-ai-5Qv"/>
+                            <constraint firstAttribute="trailing" secondItem="fVi-P6-C3R" secondAttribute="trailing" constant="5" id="SPI-cW-gsN"/>
+                            <constraint firstItem="CNH-FC-GEP" firstAttribute="leading" secondItem="Ek6-jm-KNj" secondAttribute="leading" constant="5" id="VXT-3h-Tw9"/>
+                            <constraint firstItem="fVi-P6-C3R" firstAttribute="leading" secondItem="Ek6-jm-KNj" secondAttribute="leading" constant="5" id="fIx-Cw-VMk"/>
+                            <constraint firstAttribute="trailing" secondItem="tzr-1l-dtP" secondAttribute="trailing" constant="5" id="kdF-zf-kzi"/>
+                            <constraint firstAttribute="trailing" secondItem="CNH-FC-GEP" secondAttribute="trailing" constant="5" id="mLE-Oz-yKW"/>
+                            <constraint firstItem="fVi-P6-C3R" firstAttribute="top" secondItem="tzr-1l-dtP" secondAttribute="bottom" constant="5" id="pKK-DL-3Ku"/>
+                            <constraint firstAttribute="bottom" secondItem="fVi-P6-C3R" secondAttribute="bottom" constant="5" id="tPn-fB-7ny"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Ek6-jm-KNj" secondAttribute="bottom" id="C3M-aM-pCu"/>
+                    <constraint firstAttribute="trailing" secondItem="Ek6-jm-KNj" secondAttribute="trailing" id="FsO-d9-04H"/>
+                    <constraint firstItem="Ek6-jm-KNj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Qcq-kC-tcb"/>
+                    <constraint firstItem="Ek6-jm-KNj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="WU4-M0-cYX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="content" destination="fVi-P6-C3R" id="kyQ-93-N7Q"/>
+                <outlet property="icon" destination="CNH-FC-GEP" id="fyk-bj-Mzb"/>
+                <outlet property="title" destination="tzr-1l-dtP" id="7pV-ne-uTh"/>
+            </connections>
+            <point key="canvasLocation" x="72" y="143.5"/>
+        </tableViewCell>
+    </objects>
+</document>
